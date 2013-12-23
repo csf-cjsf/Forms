@@ -2,8 +2,63 @@
 <head>
     <title>Internship Submissions</title>
     <style>
+        body {
+            background: black;
+            background-size: cover;
+            background-position: center;
+            color: white;
+            font-family: helvetica;
+        }
+        p {
+            font-size: 20px;
+        }
+        input {
+            width: 350px;
+            border: 0;
+            padding: auto;
+            font-size: 18px;
+        }
+        input[type="submit"] {
+            background: green;
+            color: black;
+            width: 200px;
+        }
+        input[type="radio"] {
+            width: 30px;
+        }
+        label {
+            font-size: 18px;
+            display: block;
+            float: left;
+            width : 120px;
+        }
     </style>
 </head>
 <body>
     <img src="http://csf-cjsf.org/wp-content/uploads/2013/07/logo_csf-e1375236445910.png">
+    <p>Internship Submissions</p>
+    <label>Organization</label>
+    <input type="org" placeholder="Amador Valley High School">
+    <br>
+    <label>Organization Website</label>
+    <input type="orgSite" placeholder="www.amadorvalleyhs.org">
+    <br>
+    <br>
+    <label>Contact Email</label>
+    <input type="orgEmail" placeholder="help@pleasantonusd.net">
+    <br>
+    <label>Location (City)</label>
+    <input type="location" placeholder="Pleasanton">
+    <br>
+    <label>Please describe the duties of this position</label>
+    <input type="duties" placeholder="Students will have to...">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <label>How can students apply?</label>
+    <input type="howToApply" placeholder="Students can apply by...">
+    <br>
+    <input type="submit">
 </body>
