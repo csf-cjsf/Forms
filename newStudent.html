@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <head>
-    <title>CSF Student Registration</title>
+    <title>Conference Registration</title>
     <style>
         body {
-        
             background: black;
             background-size: cover;
             background-position: center;
@@ -24,49 +23,69 @@
             color: black;
             width: 200px;
         }
+        input[type="radio"] {
+            width: 30px;
+        }
         label {
             font-size: 18px;
             display: block;
             float: left;
             width : 120px;
         }
-        iframe {
-            float: right;
-            width: 950px;
-            height: 600px;
-        }
     </style>
 </head>
 <body>
     <img src="http://csf-cjsf.org/wp-content/uploads/2013/07/logo_csf-e1375236445910.png">
-    <iframe src="listsInfo.pdf"> </iframe>
-    <p>CSF New Student Registration Form!</p>
-    <label>High School</label>
-    <input type="hs" placeholder="Amador Valley High School">
+    <p>Conference Registration Form!</p>
+    <label>School</label>
+    <input type="school" placeholder="Amador Valley High School">
     <br>
     <label>Chapter No.</label>
     <input type="chapNo" placeholder="266">
     <br>
-    <label>First Name</label>
+    <label>Adviser First Name</label>
     <input type="firstName" placeholder="Shrinithi">
     <br>
-    <label>Last Name</label>
+    <br>
+    <label>Adviser Last Name</label>
     <input type="lastName" placeholder="Narayanan">
     <br>
-    <label>Middle Initial</label>
-    <input type="mi" placeholder="S">
     <br>
-    <label>Home Address</label>
-    <input type="address" placeholder="1155 Santa Rita Road">
+    <label>Adviser Email</label>
+    <input type="email" placeholder="nithinara@gmail.com">
     <br>
-    <label>City</label>
-    <input type="city" placeholder="Pleasanton">
+    <label># of years as advisor</label>
+    <input type="years" placeholder="3">
     <br>
-    <label>Phone No.</label>
-    <input type="phone" placeholder="9254616100">
     <br>
-    <label>Grade</label>
-    <input type="grade" placeholder="11"> 
+    <label>Will the chapter advisor attend?</label>
+    <input type="radio" name="advisorAttend" value="yes">Yes
+    <br>
+	<input type="radio" name="advisorAttend" value="no">No
+    <br>
+    <br>
+    <br>
+    <br>
+    <label>Will any teachers attend?</label>
+    <input type="radio" name="teachAttend" value="yes">Yes
+    <br>
+    <input type="radio" name="teachAttend" value="no">No
+    <br>
+    <br>
+    <br>
+    <label>Will any students attend?</label>
+    <input type="radio" name="studentAttend" value="yes">Yes
+    <br>
+    <input type="radio" name="studentAttend" value="no">No
+    <br>
+    <br>
+    <br>
+    <label>Will any parents attend?</label>
+    <input type="radio" name="parentAttend" value="yes">Yes
+    <br>
+    <input type="radio" name="parentAttend" value="no">No
+    <br>
+    <br>
     <br>
     <input type="submit">
 </body>
