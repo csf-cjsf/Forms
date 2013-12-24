@@ -17,7 +17,7 @@
 6. All entries must be submitted in English.<br>
 7. All entries become the property of the California Scholarship Federation.<br>
 
-<form name="input" action="" method="get">
+<form name="input" action="" method="get" enctype="multipart/form-data" method="post">
 <b>Student Name* </b><br>
 <label for="first">First</label>
 <input type="text" name="firstname" id="first" required>
@@ -59,8 +59,8 @@ High School <br><input type="text" name="highschool" size="50" required> </p>
 Attach Essay Here (max 1000 words)<br>
 Prompt: In what specific ways has your involvement in CSF enhanced your appreciation of the intrinsic values of scholarship and service?
 <br>
-<textarea rows="30" cols="80" required></textarea>
-<input type="submit" value="Submit"
+<input type="file" name="essay" size="40" required>
+<input type="submit" value="Submit">
 
 </body>
 
