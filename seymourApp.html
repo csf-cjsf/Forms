@@ -6,4 +6,58 @@
 </head>
 <body>
     <img src="http://csf-cjsf.org/wp-content/uploads/2013/07/logo_csf-e1375236445910.png">
+<form name="input" action="" method="get" enctype="multipart/form-data" method="post">
+<b>Student Name </b><br>
+<label for="first">First</label>
+<input type="text" name="firstname" id="first" required>
+<br>
+<label for="last">Last</label>
+<input type="text" name="lastname" id="last" required>
+<p><b>Student Mailing Address </b> <br>
+<label for="schooladdress">Street Address:</label>
+<br>
+   <input type="text" name="schooladdress" id="schooladdress" size="70" required><br>
+<label for="city">City:</label><br>
+   <input type="text" name="city" id="city" size="30" required>
+<label for="zipcode">Zipcode:</label>
+<input type="text" name="zipcode" id="zipcode" required>
+<label for="country">Country:</label> 
+   <select name="country" id="country">
+   <option value="unitedstates">United States</option>
+   <option value="other">Other</option>
+   </select><br>
+<label for="studentemail"><b>Student Email</label>
+<br>
+<input type="text" name="studentemail" id="studentemail" required><br>
+Adviser Name </b><br>
+<label for="first">First</label>
+<input type="text" name="firstname" id="first" required>
+<br>
+<label for="last">Last</label>
+<input type="text" name="lastname" id="last" required><br>
+<label for="adviseremail"><b>Adviser Email</label>
+<br>
+<input type="text" name="adviseremail" id="adviseremail" required><br>
+<label for="adviserphone">Adviser Phone</label><br>
+<input type="text" name="adviserphone" id="adviserphone" required><br>
+High School <br><input type="text" name="highschool" size="50" required> </p>
+<p>CSF Chapter Number: </b><br>(You can find your chapter # <a href="http://www.csfbalfour.com/CSFCurrentChapters.asp?fedCode=CSF&sortBy=num&sortDir=asc">here</a>)<br>
+   <input type="text" name="csfchapternumber" required></p>
+<label for="schoolphone"><b>School Phone</label><br>
+<input type="text" name="schoolphone" id="schoolphone" required><br>
+Personal Statement<br>
+<input type="file" name"personalstatement" size="40"><br>
+Transcript (including first semester senior grades)<br>
+<input type="file" name"transcript" size="40"><br>
+List of Activities<br>
+<input type="file" name"activitieslist" size="40"><br>
+List of Current Classes<br>
+<input type="file" name"classlist" size="40"><br>
+Adviser Letter of Recommendation<br>
+<input type="file" name"adviserletterofrec" size="40"><br>
+Community Letter of Recommendation<br>
+<input type="file" name"communityletterofrec" size="40"><br>
+Photo Release Form<br>
+<input type="file" name"photoreleaseform" size="40"><br>
+<input type="submit" value="Submit">
 </body>
