@@ -28,3 +28,7 @@ input
 {
     width:200px;
 }
+input[type="radio"]
+{
+    width:25;
+}
