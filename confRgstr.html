@@ -1,9 +1,74 @@
 <!DOCTYPE html>
 <head>
     <title>Conference Registration</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
     <style>
+    input[type="radio"] {
+    	width: 25px;
+    }    
     </style>
 </head>
 <body>
+<div>
     <img src="http://csf-cjsf.org/wp-content/uploads/2013/07/logo_csf-e1375236445910.png">
+<br>
+<h1>2014 Conference Registration</h1>
+
+<form name="input" action="" method="get" enctype="multipart/form-data" method="post">
+
+	<b><label>School</label>
+	<br>
+    <input type="school" required>
+    <br>
+    <label>Chapter No.</label>
+    <br>
+    <input type="chapNo" required>
+    <br>
+    <label>Adviser First Name</label>
+    <br>
+    <input type="firstName" required>
+    <br>
+    <label>Adviser Last Name</label>
+    <br>
+    <input type="lastName" required>
+    <br>
+    <label>Adviser Email</label>
+    <br>
+    <input type="email" required>
+    <br>
+    <label># of years as advisor</label>
+    <br>
+    <input type="years" required>
+    <br>
+    <label>Will the chapter advisor attend?</label>
+    <br>
+    <input type="radio" name="advisorAttend" value="yes">Yes
+    <br>
+	<input type="radio" name="advisorAttend" value="no" checked="checked">No
+    <br>
+    <br>
+    <label>Will any teachers attend?</label>
+    <br>
+    <input type="radio" name="teachAttend" value="yes">Yes
+    <br>
+    <input type="radio" name="teachAttend" value="no" checked="checked">No
+    <br>
+    <br>
+    <label>Will any students attend?</label>
+    <br>
+    <input type="radio" name="studentAttend" value="yes">Yes
+    <br>
+    <input type="radio" name="studentAttend" value="no" checked="checked">No
+    <br>
+    <br>
+    <label>Will any parents attend?</label>
+    <br>
+    <input type="radio" name="parentAttend" value="yes">Yes
+    <br>
+    <input type="radio" name="parentAttend" value="no" checked="checked">No
+    <br>
+    <br> </b>
+<input type="submit" value="Submit">
+
+</div>
 </body>
