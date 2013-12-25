@@ -1,64 +1,82 @@
 <!DOCTYPE html>
 <head>
-    <title>Internship Submissions</title>
+    <title>Internship Submission</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
     <style>
-        body {
-            background: black;
-            background-size: cover;
-            background-position: center;
-            color: white;
-            font-family: helvetica;
-        }
-        p {
-            font-size: 20px;
-        }
-        input {
-            width: 350px;
-            border: 0;
-            padding: auto;
-            font-size: 18px;
-        }
-        input[type="submit"] {
-            background: green;
-            color: black;
-            width: 200px;
-        }
+        input[type="checkbox"] {
+    	   width: 25px;
+        } 
         input[type="radio"] {
-            width: 30px;
-        }
-        label {
-            font-size: 18px;
-            display: block;
-            float: left;
-            width : 120px;
-        }
+           width: 25px;
+        }   
+        input[type="duties"] {
+           width: 690px;
+        }  
+        input[type="howToApply"] {
+           width: 690px;
+        }   
     </style>
 </head>
 <body>
+<div>
     <img src="http://csf-cjsf.org/wp-content/uploads/2013/07/logo_csf-e1375236445910.png">
-    <p>Internship Submissions</p>
+<br>
+<h1>Internship Submission</h1>
+
+<form name="input" action="" method="get" enctype="multipart/form-data" method="post">
+
+	<b>
+
     <label>Organization</label>
-    <input type="org" placeholder="Amador Valley High School">
+    <br>
+    <input type="org" required>
     <br>
     <label>Organization Website</label>
-    <input type="orgSite" placeholder="www.amadorvalleyhs.org">
     <br>
+    <input type="orgSite" required>
     <br>
     <label>Contact Email</label>
-    <input type="orgEmail" placeholder="help@pleasantonusd.net">
+    <br>
+    <input type="orgEmail" required>
     <br>
     <label>Location (City)</label>
-    <input type="location" placeholder="Pleasanton">
+    <br>
+    <input type="location" required>
     <br>
     <label>Please describe the duties of this position</label>
-    <input type="duties" placeholder="Students will have to...">
     <br>
-    <br>
-    <br>
-    <br>
+    <input type="duties" required>
     <br>
     <label>How can students apply?</label>
-    <input type="howToApply" placeholder="Students can apply by...">
     <br>
-    <input type="submit">
+    <input type="howToApply" required>
+    <br>
+    <label>Who is eligible for this internship? (check all that apply)</label>
+    <br>
+    <input type="checkbox" name="eligible" value="highSchool">Current CSF students (high school)<br>
+    <input type="checkbox" name="eligible" value="College">CSF alumni (college)
+    <br>
+    <br> 
+    <label>What is the targeted start date? (MM/DD/YY)</label>
+    <br>
+    <input type="text" name="startDate" required>
+    <br>
+    <label>How long will the internship last?</label>
+    <br>
+    <input type="text" name="length" required>
+    <br>
+    <label>Is this a paid opportunity?</label>
+    <br>
+    <input type="radio" name="paid" value="no" checked="checked">No<br>
+    <input type="radio" name="paid" value="yes">Yes<br>
+    <label>If you have an accompanying flyer, please attach it here</label>
+    <br>
+    <input type="file" required>
+
+
+    </b>
+
+<input type="submit" value="Submit">
+
+</div>
 </body>
