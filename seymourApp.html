@@ -42,19 +42,20 @@ input
 <br>
 <label for="last">Last</label>
 <input type="text" name="lastname" id="last" required>
-<p><b>Student Mailing Address </b> <br>
-<label for="schooladdress">Street Address:</label>
-<br>
-   <input type="text" name="schooladdress" id="schooladdress" size="70" required><br>
-<label for="city">City:</label><br>
-   <input type="text" name="city" id="city" size="30" required>
-<label for="zipcode">Zipcode:</label>
-<input type="text" name="zipcode" id="zipcode" required>
-<label for="country">Country:</label> 
+<fieldset>
+<legend>Student Mailing Address</legend>
+<p><label class="field" for="schooladdress">Street Address:</label>
+   <input class="textbox" type="text" name="schooladdress" id="schooladdress"  required></p>
+<p><label class="field" for="city">City:</label>
+   <input class="textbox" type="text" name="city" id="city" size="30" required></p>
+<p><label class="field" for="zipcode">Zipcode:</label>
+<input class="textbox" type="text" name="zipcode" id="zipcode" required></p>
+<p><label class="field" for="country">Country:</label> 
    <select name="country" id="country">
    <option value="unitedstates">United States</option>
    <option value="other">Other</option>
-   </select><br>
+   </select></p>
+</fieldset>
 <label for="studentemail"><b>Student Email</label>
 <br>
 <input type="text" name="studentemail" id="studentemail" required><br>
