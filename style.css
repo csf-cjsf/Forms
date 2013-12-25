@@ -1,0 +1,29 @@
+div
+{
+background:#F3FAFD;
+width:700px;
+padding:10px;
+border:10px ridge royalblue;
+margin:0px auto;
+}
+body
+{background:linear-gradient(to bottom, lightyellow, gold);
+line-height:130%;
+tex-align:left;
+}
+label.field
+{
+text-align:right;
+width:120px;
+float:left;
+font-weight:bold;
+}
+input.textbox
+{
+width:300px;
+
+}
+input
+{
+    width:200px;
+}
