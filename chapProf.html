@@ -1,9 +1,39 @@
 <!DOCTYPE html>
 <head>
-    <title>Chapter Profiles</title>
-    <style>
-    </style>
+    <title>CJSF Adviser Bio Submission</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+<div>
     <img src="http://csf-cjsf.org/wp-content/uploads/2013/07/logo_csf-e1375236445910.png">
+<br>
+<h1>Chapter Profile Submission</h1>
+<p>Fill this out & submit, and we'll be sure to let you know when you're published on the website! <br> 
+</p>
+<form name="input" action="" method="get" enctype="multipart/form-data" method="post">
+<b>Adviser Name</b><br>
+<label for="first">First</label>
+<input type="text" name="firstname" id="first" required>
+<br>
+<label for="last">Last</label>
+<input type="text" name="lastname" id="last" required>
+<br>
+<label for="adviseremail"><b>Adviser Email</label>
+<br>
+<input type="text" name="adviseremail" id="adviseremail" required>
+<br>
+High School </b><br>
+<input type="text" name="highschool" id="school" required>
+<br>
+
+<label><b>Photo</label> <br> <br>
+<input type="file" name="photo"> <p title="instruct">optional</p><br> <br>
+
+<label> Bio </label>
+<br>
+<br>
+<input type="file" name="bio" required><br>
+<br>
+<input type="submit" value="Submit">
+</div>
 </body>
